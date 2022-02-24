@@ -70,15 +70,50 @@
 // console.log(arr)
 
 // =====================================================================
-console.log('request data...');
+// console.log('request data...');
 
-const p = new Promise((resolve, reject) => {
-     setTimeout(() => {
-         console.log('prepairing data...........');
-         const backendData = {
-             server: 'aws',
-             port: 3000,
-             status: 'fetching'
-         }
-     },3000)
-})
+// const p = new Promise((resolve, reject) => {
+//      setTimeout(() => {
+//          console.log('prepairing data...........');
+//          const backendData = {
+//              server: 'aws',
+//              port: 3000,
+//              status: 'fetching'
+//          }
+//          resolve(backendData)
+//      },2000)
+// })
+
+// p.then(data => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             data.modified = true
+//             resolve(data)
+//             // console.log('data is modified', data);
+//         },3000)
+//     })
+//     // p2.then(clientData => {
+//     //     console.log('data is fetched', clientData);
+//     // })
+// }).then(clientData => {
+//         console.log('data is fetched', clientData);
+// }).catch(err => console.error('Error: ', err))
+//   .finally(() => console.log('Finally'));
+
+// const sleep = ms => new Promise(resolve => setTimeout(() => resolve(), ms))
+
+// // sleep(3000).then(() => console.log('after 2 sec'));
+// // sleep(4000).then(() => console.log('after 4 sec'));
+
+// Promise.all([sleep(2000), sleep(5000)])
+//     .then(() => {
+//         console.log('promises is resolved');
+//     })
+
+// Promise.race([sleep(2000), sleep(5000)])
+//     .then(() => {
+//         console.log('promises is raced');
+//     })
+
+// ========================================================================================
+
