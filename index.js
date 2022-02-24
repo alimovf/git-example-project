@@ -117,3 +117,38 @@
 
 // ========================================================================================
 
+// const person = Object.create(
+//     {
+//         calcAge() {
+//             console.log(new Date().getFullYear() - this.birthYear);
+//         }
+//     }, 
+//     {
+//         name: {
+//             value: 'Farxod',
+//             enumerable: true,
+//             writable: true,
+//             configurable: true
+//     },
+//         birthYear: {
+//             value: 1994,
+//             enumerable: true
+//     },
+//         age: {
+//             get() {
+//                 return new Date().getFullYear() - this.birthYear
+//             },
+//             set(value) {
+//                 console.log('set the value: ', value);
+//             }
+//         }
+// })
+
+// for (let key in person) {
+//     if(person.hasOwnProperty(key)) {
+//         console.log(key, person[key]);
+//     }
+    
+// }
+
+// =====================================================================================
