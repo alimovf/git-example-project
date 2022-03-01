@@ -152,3 +152,42 @@
 // }
 
 // =====================================================================================
+
+// const delay = ms => {
+//     return new Promise(resolve => setTimeout(() => resolve(), ms))
+// }
+//  delay(3000).then(() => console.log('2 sec'));
+
+//  const url = 'https://jsonplaceholder.typicode.com/todos';
+
+// //  function fetchTodos() {
+// //      console.log('Fetching is started........');
+// //      return delay(2000)
+// //         .then(() => fetch(url))
+// //         .then(resopnse => resopnse.json())
+// //  }
+
+// //  fetchTodos()
+// //     .then(data => {
+// //         console.log('Data: ', data);
+// //     })
+// //     .catch(e => console.error(e));
+
+// async function fetchAsync() {
+//     try {
+//         console.log('Fetching is started........');
+//         await delay(2000)
+//         const resopnse = await fetch(url)
+//         const data = resopnse.json()
+//         console.log('Data: ', data);
+//     } catch(e) {
+//         console.error(e);
+//     } finally {
+//         console.log('fullfiled');
+//     }
+
+// }
+
+// fetchAsync()
+
+// ======================================================
